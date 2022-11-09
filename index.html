@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mini Game | Satyamahinsa</title>
+</head>
+
+<body>
+    <div id="container">
+        <header id="title">
+            <h1>MINI GAME</h1>
+        </header>
+        <div id="status" class="status">
+            <h2>STATUS</h2>
+            <h3 id="result"></h3>
+        </div>
+        <div id="match" class="match-board">
+            <div class="board">
+                <h2 id="player-name" class="name"></h2>
+                <h3 id="player-score" class="score">Score: 0</h3>
+                <h3 id="player-option" class="option"></h3>
+            </div>
+            <h2 id="vs">VS</h2>
+            <div class="board">
+                <h2 id="bot-name" class="name"></h2>
+                <h3 id="bot-score" class="score">Score: 0</h3>
+                <h3 id="bot-option" class="option"></h3>
+            </div>
+        </div>
+        <div id="target-score" class="target-score">
+            <h4>Target Score: 5</h4>
+        </div>
+        <div id="picker" class="picker">
+            <button class="picker-option" id="scissors" onclick="mainGame('✌')">✌</button>
+            <button class="picker-option" id="rock" onclick="mainGame('✊')">✊</button>
+            <button class="picker-option" id="paper" onclick="mainGame('🖐')">🖐</button>
+        </div>
+        <div id="reset">
+            <button id="play-again" class="resetButton">🔁 Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
